@@ -1,0 +1,24 @@
+using System;
+
+namespace Ejercicio2_Progra_II
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            string numero = "1234";
+
+            //El GetType muestra la representacion string de la variable
+            Console.WriteLine(numero.GetType().ToString());
+
+            //Se declara una variable para convertirla en Int y mostrar el tipo en pantalla
+            int intNumero = Convert.ToInt32(numero);
+            Console.WriteLine(intNumero.GetType().ToString());
+
+            //String.Formate permite hacer macro substituciones
+            Console.WriteLine(String.Format("El numero es {0}", intNumero));
+            //Pausa
+            Console.ReadKey();
+        }
+    }
+}

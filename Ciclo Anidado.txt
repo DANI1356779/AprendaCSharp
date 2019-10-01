@@ -1,0 +1,27 @@
+using System;
+
+namespace Proyecto
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            /*PROGRAMA TABLAS: CICLO ANIDADO*/
+            for (int i = 1; i <= 10; i++)
+            {
+                Console.WriteLine("");
+                //Se inicia con el programa de mostrar tablas de multiplicar
+                Console.WriteLine(String.Format("TABLA DEL {0}: ", i));
+                Console.WriteLine("");
+                //For anidado el cual hace combinar la secuencia de datos.
+                for (int j = 1; j <= 10; j++)
+                {
+                    Console.WriteLine(String.Format("{0} x {1} = {2}", i, j, i * j));
+                }
+            }
+            //Pausa
+            Console.WriteLine("Presiona cualquier tecla para terminar...");
+            Console.ReadKey();
+        }
+    }
+}

@@ -1,0 +1,48 @@
+using System;
+
+namespace Multiplo
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            string _numero;
+            int numero;
+            bool esMultiplo3, esMultiplo5, esMultiplo7;
+
+            try
+            {
+                Console.Write("Dame un número entero: ");
+                _numero = Console.ReadLine();
+                number = convert.ToInt32(_numero);
+                //Si un numero tiene un residual de cero con respecto
+                //a un numero, es que es múltiplo.
+                esMultiplo3 = ((numero % 3) == 0);
+                esMultiplo5 = ((numero % 5) == 0);
+                esMultiplo7 = ((numero % 7) == 7);
+                //Si el multiplo de 3 y 5 al mismo tiempo,
+                // O si es multiplo de 7 correcto.
+                if((esMultiplo3 & esMultiplo%) | esMultiplo7
+                {
+                     Console.WriteLine("Correcto.");
+                }
+                else 
+                {
+                     Console.WriteLine("Incorrecto.");
+                }
+             catch   (Exception e)
+             {
+                       
+                Console.WriteLine("El dato proporcionado causa errores. ");
+                Console.WriteLine(e.Message);
+             }
+             finally
+             {
+                //Pausa
+                Console.WriteLine("");
+                Console.WriteLine("Presiona cualquier tecla para continuar");
+                Console.ReadKey();
+             }
+        }
+    }
+}
