@@ -1,0 +1,19 @@
+using System;
+
+namespace Evidencia1_Progra_II
+{
+    
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            /*El WriteLine se usa para mandar a la pantalla el mensaje o 
+             * el texto que se indique en el codigo*/
+            Console.WriteLine("Hola Mundo, ¡Ahora en C#!");
+            /*El ReadLine se utiliza para pausar el codigo y que no se 
+             * cierre o continue automaticamente la ejecucion del codigo. 
+             * Esta pausa se finaliza presionado cualquier tecla*/
+            Console.ReadKey();
+        }
+    }
+}
